@@ -10,7 +10,7 @@ Critérios:
 2 – Ao inserir um dos campos inválidos deve exibir uma mensagem de alerta “Usuário ou senha inválidos”
 
 Cenário: Dados válidos deve ser direcionado para a tela de checkout
-Dado que o usuário inseriu email e senha válidos nos campos de login
+Dado que o usuário inseriu email ou senha válidos nos campos de login
 Quando o usuário submete os dados para autenticação
 Então o usuário é direcionado para a tela de checkout
 
@@ -23,11 +23,17 @@ Contexto:
 Dado que o usuário está na tela de cadastro
 
 Esquema do Cenário: Dados válidos deve ser direcionado para a tela de checkout
-Quando o <usuario> insere <email> e <senha> válidos
+Quando o <usuario> insere <email> e <senha> com <requisitos de senha> válidos
 E submete os dados para autenticação
 Então o usuário é direcionado para a tela de checkout
 
-Esquema do Cenário: Campos inválidos com mensagem de alerta
+Exemplos:
+| usuario | email        | senha        | requisitos de senha                         |
+| joão    | email_valido | senha_valida | mínimo 12 caracteres entre letras e números |
+| john    | email@valido | senha@valida | mínimo 12 caracteres entre letras e números |
+| maria   | email.valido | senha.valida | mínimo 12 caracteres entre letras e números |
+
+Esquema do Cenário: Dados inválidos com mensagem de alerta
 Quando o <usuario> insere <email> e <senha> inválidos
 E submete os dados para autenticação
 Então uma <mensagem> de alerta é exibida

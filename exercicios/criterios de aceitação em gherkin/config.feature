@@ -16,17 +16,17 @@ Dado que o cliente está configurando o produto por cor, tamanho e quantidade de
 Quando o cliente insere o produto no carrinho
 Então o produto configurado é adicionado corretamente
 
-Cenário: Seleções de cor, tamanho e quantidade devem ser obrigatórios
+Contexto:
 Dado que o cliente está configurando o produto
+
+Cenário: Seleções de cor, tamanho e quantidade devem ser obrigatórios
 Quando o cliente não seleciona corretamente a cor, tamanho e quantidade
-Então o produto configurado não é inserido no carrinho com uma mensagem informando o motivo
+Então o produto configurado não é inserido no carrinho com uma mensagem de alerta informando o motivo
 
 Cenário: Deve permitir apenas 10 produtos por venda
-Dado que o cliente está configurando o produto
-Quando o cliente tenta inserir 11 produtos no carrinho
-Então a tentativa apresenta erro com uma mensagem informando o motivo 
+Quando o cliente tenta inserir 11 ou mais produtos no carrinho
+Então a tentativa apresenta erro com uma mensagem de alerta informando o motivo 
 
-Cenário: Quando eu clicar no botão “limpar” deve voltar ao estado original
-Dado que o cliente está configurando o produto
+Cenário: Quando o usuário clicar no botão “limpar” deve voltar ao estado original
 Quando o cliente clicar no botão "Limpar" do carrinho
 Então todas as seleções são desfeitas para o estado original

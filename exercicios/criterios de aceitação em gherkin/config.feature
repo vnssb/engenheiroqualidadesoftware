@@ -11,13 +11,13 @@ Critérios:
 2 – Deve permitir apenas 10 produtos por venda
 3 – Quando eu clicar no botão “limpar” deve voltar ao estado original
 
-Cenário: Configurar produto de acordo com tamanho e gosto
-Dado que o cliente está configurando o produto por cor, tamanho e quantidade desejada
-Quando o cliente insere o produto no carrinho
-Então o produto configurado é adicionado corretamente
-
 Contexto:
 Dado que o cliente está configurando o produto
+
+Cenário: Configurar produto de acordo com tamanho e gosto
+Quando o cliente seleciona a cor, tamanho e quantidade desejada
+E insere o produto no carrinho
+Então o produto configurado é adicionado corretamente
 
 Cenário: Seleções de cor, tamanho e quantidade devem ser obrigatórios
 Quando o cliente não seleciona corretamente a cor, tamanho e quantidade

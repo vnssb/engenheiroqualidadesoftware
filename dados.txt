@@ -1,0 +1,12 @@
+Dados do aluno
+
+-Primeiro Nome: Vanessa
+-Profissão: Analista de Testes e Qualidade de Software Jr
+-Cidade: Imperatriz
+-O que faz nas horas vaga: Estudo
+-Feedback sobre o curso Qualidade de Software: Muito bom até o momento
+-Feedback sobre a plataforma de estudo da EBAC: Plataforma ótima
+
+Obrigado!!!
+
+

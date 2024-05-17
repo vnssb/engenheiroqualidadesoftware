@@ -1,5 +1,6 @@
 /slides
 /exercicios/testes de ui
+/prática
 
 # Ignore node_modules directory
 ***/node_modules
